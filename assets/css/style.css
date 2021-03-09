@@ -54,6 +54,10 @@ body {
   section{
     padding: 30px 0;
   }
+  p.text-color-blue{
+    color: var(--blue);
+    font-family: GothamBold;
+  }
 
 
 
