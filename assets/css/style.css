@@ -63,7 +63,7 @@ body {
   .divider{
     height: 1px;
     background-color: var(--blue);
-    width: 50%;
+    width: 30%;
     margin: 5px auto;
   }
 
@@ -347,6 +347,12 @@ h3 p{
   margin: 0 auto;
 }
 
+#asesor #regAsesor  input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+  opacity: 0;
+}
+
 #asesor .card-img {
   max-width: 100%;
   height: auto; 
@@ -418,6 +424,54 @@ h3 p{
   font-family: 'Roboto', sans-serif  !important;
   margin: 0;
   padding: 0;
+}
+
+/*FORM*/
+
+#regAsesor{
+ padding: 30px 0;
+ background-color:  #fff;
+
+}
+#regAsesor input{
+  padding: 10px;
+  border:  1px solid #f2f2f2;
+}
+
+input.invalid{
+  background-color: #ffdddd;
+
+}
+
+#regAsesor button {
+  background-color: var(--blue);
+  color: #fff !important;
+  border-radius: 0 !important;
+  font-family: GothamBold;
+  padding: 10px 20px;
+}
+
+.tab{
+  display: none;
+}
+
+.step{
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: var(--blue-light);
+  border: none;
+  display: inline-block;
+  opacity: 0.5;
+
+}
+
+.step.active{
+  opacity: 1;
+}
+
+.step.finish{
+  background-color: var(--blue);
 }
 
 

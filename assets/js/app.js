@@ -17,15 +17,6 @@ $(function(){
       }
   })
 
-    /*$(".carousel .carousel-item[data-src]").each(function(){
-        var $this = $(this);
-    
-        $this.prepend(
-            [
-                '<div style="background-image: url(', $this.attr("data-src"),')"></div>'
-            ].join("")
-        );
-    });*/
     
     // Back to top button
     $(window).scroll(function() {
@@ -42,5 +33,7 @@ $(function(){
         }, 1500, 'easeInOutExpo');
         return false;
       });
+
+     
 });
 
