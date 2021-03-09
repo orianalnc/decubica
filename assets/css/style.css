@@ -168,7 +168,8 @@ body {
   height: 400px;
   object-fit: cover;
 }
-section#slider .card{
+
+.form-contact .card{
   padding: 20px;
   background-color: #fff;
   border: none;
@@ -181,7 +182,7 @@ section#slider .card .card-header{
 section#slider .card .card-header h4{
   color: var(--blue);
 }
-section#slider .card .card-form input.form-control, textarea.form-control{
+.form-contact .card .card-form input.form-control, textarea.form-control{
   border: 1px solid #E6E6E6;
   margin: 5px;
   
@@ -474,6 +475,60 @@ input.invalid{
 
 .step.finish{
   background-color: var(--blue);
+}
+
+#ventajas .ecology, #ventajas .certificaciones{
+  padding: 60px 0;
+}
+
+#ventajas .ecology p{
+  margin: 0 0 0 6px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#ventajas .ecology p span{
+  font-size: 10px;
+}
+
+#ventajas h4{
+  color: var(--blue-text);
+}
+
+
+#ventajas   .form-contact{
+  margin-top: 0px;
+ 
+
+}
+
+#ventajas .carousel-caption {
+  position: absolute;
+  right: 10%;
+  bottom: 200px;
+  left: 10%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: left;
+}
+#ventajas .carousel-caption h2 {
+  font-size: 60px;
+  font-family: GothamBold;
+}
+
+#ventajas #hero{
+ /* background-image: url(../images/zero-imagen.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--blue);
+  padding: 100px 0;
+}
+
+#ventajas #hero p{
+  color: var(--blue);
+  font-size: 15px;
 }
 
 
