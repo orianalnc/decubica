@@ -3,6 +3,7 @@
     --blue: #13A1DC;
     --blue-light: #00DEF3;
     --dark: #303030;
+    --blue-text: #40B3E2;
 }
 
 @font-face{
@@ -59,7 +60,20 @@ body {
     font-family: GothamBold;
   }
 
+  .divider{
+    height: 1px;
+    background-color: var(--blue);
+    width: 50%;
+    margin: 5px auto;
+  }
 
+  
+.animate__animated.animate__fadeIn, 
+.animate__animated.animate__fadeInRight, 
+.animate__animated.animate__fadeInLeft{
+  --animate-duration: 2s;
+}
+  
 
 
 
@@ -311,13 +325,102 @@ h3 p{
   font-family: GothamBlack;
 }
 
-.animate__animated.animate__fadeIn, 
-.animate__animated.animate__fadeInRight, 
-.animate__animated.animate__fadeInLeft{
-  --animate-duration: 2s;
+
+ /*--- Landing Asesor ---*/
+
+#asesor .card{
+  padding: 30px 20px;
 }
 
-  
+#asesor .card .card-header h5{
+  font-size: 16px;
+  color: var(--blue-text);
+}
+#asesor .card .card-header p{
+  margin: 0;
+  font-size: 13px;
+}
+
+
+#asesor #regAsesor input.form-control {
+  width: 30%;
+  margin: 0 auto;
+}
+
+#asesor .card-img {
+  max-width: 100%;
+  height: auto; 
+  object-fit: cover;
+}
+#asesor h4{
+  color: var(--blue);
+  font-family: GothamBold;
+}
+#asesor h4 span{
+  color: var(--blue-light);
+  font-size: 12px;
+}
+
+#asesor .card-body.asesor p{
+  color: var(--blue);
+  margin: 0;
+  font-size: 13px;
+  font-family: GothamBold;
+}
+
+#asesor .card-body.asesor  a.button {
+  background-color: var(--blue);
+  color: #fff !important;
+  border-radius: 0 !important;
+  font-family: GothamBold;
+  padding: 10px 20px;
+}
+
+ /*--- Lista Asesor ---*/
+#asesor .card-body.asesor ul{
+  padding-inline-start: 20px;
+}
+#asesor .card-body.asesor ul li{
+  font-size: 13px;
+  color: var(--blue-light);
+}
+::marker {
+  unicode-bidi: isolate;
+  font-variant-numeric: tabular-nums;
+  text-transform: none;
+  text-indent: 0px !important;
+  text-align: start !important;
+  text-align-last: start !important;
+  color: var(--blue-light);
+}
+
+
+.circle{
+  width: 80px;
+  height: 80px;
+  background-color: var(--blue-light);
+  margin: -50px 0 0 0;
+  padding: 10px;
+  text-align:  center;
+
+ 
+}
+
+.circle p, .circle span{
+  font-size: 10px !important;
+  color: #fff;
+  line-height: 1.3;
+}
+
+.circle .options p{
+  font-size: 9px !important;
+  color: #fff !important;
+  font-family: 'Roboto', sans-serif  !important;
+  margin: 0;
+  padding: 0;
+}
+
+
 
   /*---------- Media ----------*/
 
