@@ -59,6 +59,15 @@ body {
     color: var(--blue);
     font-family: GothamBold;
   }
+  p.text-sm{
+    font-size: 15px;
+  }
+
+  .text-color-blue{
+    color: var(--blue);
+  }
+
+  
 
   .divider{
     height: 1px;
@@ -500,6 +509,12 @@ input.invalid{
   margin-top: 0px;
  
 
+}
+
+#ventajas .ecology .card{
+  padding: 10px;
+  border: 5px dotted var(--blue);
+  border-radius: 20px;
 }
 
 #ventajas .carousel-caption {
