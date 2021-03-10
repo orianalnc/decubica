@@ -82,10 +82,34 @@ body {
 .animate__animated.animate__fadeInLeft{
   --animate-duration: 2s;
 }
+
+/*---------- Slider ----------*/
+
+#homepage .carousel-caption {
+  position: absolute;
+  right: 10%;
+  top:200px;
+  left: 10%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: left;
+}
+#homepage .carousel-caption h2 {
+  font-size: 60px;
+  font-family: GothamBold;
+}
   
-
-
-
+#homepage .carousel-caption p{
+  font-size: 40px;
+  font-family: GothamBook;
+  color: #fff;
+}
+#homepage .carousel-caption .button{
+  width: 30%;
+  padding: 10px;
+}
 
 
 /*---------- Back to top button ----------*/
@@ -199,7 +223,7 @@ section#slider .card .card-header h4{
 
 ::placeholder{
   color: #e6e6e6;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 section#slider .card .card-footer{
@@ -553,17 +577,20 @@ input.invalid{
   font-family: GothamBold;
 }
 
-#ventajas #hero{
- /* background-image: url(../images/zero-imagen.jpg); */
+#ventajas .hero{
+  background-image: url(../images/ventajas-002.png); 
   background-repeat: no-repeat;
+  background-position: 50%;
   background-size: cover;
   color: var(--blue);
-  padding: 100px 0;
+  padding: 150px 0;
+  margin: 60px 0 ;
 }
 
 #ventajas #hero p{
   color: var(--blue);
   font-size: 15px;
+  padding: 0 50px;
 }
 
 #zero #hero h2{
@@ -576,7 +603,67 @@ input.invalid{
 
   /*---------- Media ----------*/
 
-  @media only screen and (max-width:375px){
+ 
+
+  
+
+  @media only screen and (max-width:1024px){
+    #homepage .carousel-caption {
+      top:100px;
+    }
+    #homepage .carousel-caption h2 {
+      font-size: 40px;
+    }
+      
+    #homepage .carousel-caption p{
+      font-size: 20px;
+      color: #fff;
+    }
+    .form-contact{
+      margin-top: -150px;
+    }
+    #ventajas .hero {
+    padding: 80px 0;
+    }
+    #asesor .card-body.asesor a.button {
+      padding: 10px 10px;
+      font-size: 10px;
+    }
+    .circle {
+      margin: -70px 0 0 -5px;
+    }
+  }
+  @media only screen and (max-width:768px){
+    #homepage .carousel-caption {
+      top:50px;
+    }
+    #homepage .carousel-caption h2 {
+      font-size: 30px;
+    }
+      
+    #homepage .carousel-caption p{
+      font-size: 15px;
+      color: #fff;
+    }
+    .form-contact{
+      margin-top: -80px;
+    }
+    #homepage .carousel-caption .button{
+      width: 50%;
+    }
+    #ventajas #hero p {
+      padding: 0 20px;
+    }
+    #ventajas .hero {
+      padding: 30px 0;
+    }
+    #zero #hero h2 {
+      font-size: 30px;
+    }
+   
+  }
+
+  @media only screen and (max-width:425px){
     .logo{
         width: 160px;
     }
@@ -598,6 +685,75 @@ input.invalid{
     ul.navbar-nav.nav-link li i{
       padding: 0 5px ;
     }
-  }
 
-  
+    #homepage .carousel-caption, #ventajas .carousel-caption {
+      top:20px;
+      padding: 10px 0;
+      
+    }
+    #homepage .carousel-caption h2, #ventajas .carousel-caption h2 {
+      font-size: 20px;
+    }
+      
+    #homepage .carousel-caption p, #ventajas .carousel-caption p{
+      font-size: 15px;
+    }
+   
+    #homepage .carousel-caption .button{
+      width: 50%;
+      padding: 5px 10px;
+      font-size: 13px;
+    }
+    .bg-blue {
+      background-color: var(--blue);
+      color: #fff;
+      padding: 20px;
+    }
+    section#asesor {
+        padding: 100px 0px;
+    }
+    #ventajas .ecology, #ventajas #hero, #ventajas .certificaciones, section, #regAsesor{
+      padding: 30px 15px;
+    }
+    #ventajas .hero {
+      padding: 100px 0;
+    }
+    #asesor #regAsesor input.form-control {
+    width: 100%;
+    margin: 0 auto;
+  }
+  #regAsesor button {
+    margin: 5px 0;
+  }
+  .circle {
+    margin: -80px 0 0 0;
+  }
+  #zero #hero h2 {
+    font-size: 25px;
+  }
+    
+}
+
+@media only screen and (max-width:375px){
+  .circle {
+    margin: -20px 0px 10px 0;
+  }
+}
+
+  @media only screen and (max-width:320px){
+    #homepage .carousel-caption {
+      top: 20px;
+    }
+    #homepage .carousel-caption h2 {
+      font-size: 15px;
+    }
+    #homepage .carousel-caption p{
+      font-size: 13px;
+    }
+    .circle {
+      margin: -50px -30px 10px 0;
+    }
+    #zero #hero h2 {
+      font-size: 15px;
+    }
+  }
