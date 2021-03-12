@@ -227,6 +227,14 @@ body {
         height: inherit;
 }
 
+.carousel-indicators .active {
+    opacity: 1;
+}
+.carousel-indicators li {
+  background-color: var(--blue);
+}
+
+
 /*---------- Card form ----------*/
 .form-contact{
   margin-top: -80px;
